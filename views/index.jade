@@ -1,0 +1,16 @@
+extends layout
+block content
+	h1= title
+
+	div
+		ul.sync-pagination.pagination-sm
+
+	.item-wrap
+		each item,i in data
+			.item-box.TBUED
+				.item-thumb: img(src="#{item.thumbnail}" width="200")
+				h4.item-title
+					a(href="#{item.link}" target="_blank") #{item.title}
+				p.item-desc #{item.desc}
+				p.item-time #{item.time}
+

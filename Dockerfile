@@ -1,6 +1,7 @@
-FROM node:4.2.2
+FROM node:5.10.1
 MAINTAINER 935486956@qq.com
 
 RUN npm install
-RUN npm start
+
 EXPOSE 80
+ENTRYPOINT npm start

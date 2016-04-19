@@ -1,4 +1,4 @@
-FROM node:5.10.1
+FROM node:4.4.2
 MAINTAINER 935486956@qq.com
 
 RUN npm install
